@@ -1,0 +1,222 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+.popup-panel {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    z-index: 99;
+    font-size: 14px;
+}
+
+.popup-panel .content-wrapper {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #595959;
+    top: 31%;
+    /* display: flex; */
+    position: absolute;
+    width: 100%;
+}
+
+.popup-panel.active {
+    pointer-events: unset!important;
+    opacity: 1!important;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.popup-panel img.close-btn {
+    position: absolute;
+    top: 12%;
+    right: 1%;
+    width: 5%;
+    cursor: pointer;
+}
+
+.popup-panel .popup-form {
+    width: 40%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.popup-panel .popup-form .popup-bg {
+    width: 100%;
+    height: auto;
+}
+
+.popup-panel .popup-form .btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+}
+
+.popup-panel .popup-form .btn-wrapper a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.popup-panel .popup-form .btn-wrapper a:nth-child(1) {
+    margin-left: 30px;
+}
+
+.popup-panel .popup-form .btn-wrapper a:nth-child(3) {
+    margin-right: 30px;
+}
+
+
+/*Popup  booth*/
+
+.popup-panel .popup-form.booth {
+    width: 50%;
+}
+
+.popup-panel .popup-form img.booth-image {
+    position: absolute;
+    right: 0;
+    height: 35%;
+    width: auto;
+    left: 0;
+    margin: auto;
+    top: 36.5%;
+    border: 3px solid #c8c8c8;
+    border-radius: 5%;
+}
+
+.popup-panel .popup-form.booth .btn-wrapper {
+    top: 78%;
+}
+
+.popup-panel .popup-form.booth .btn-wrapper a:nth-child(2) {
+    margin-right: 30px;
+}
+
+.oneBtn {
+    margin-left: 0 !important;
+}
+
+.oneBtn img {
+    width: 45%;
+}
+
+
+/*Popup end*/
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    .popup-panel .popup-form {
+        width: 50%;
+    }
+    .popup-panel .popup-form .btn-wrapper a {
+        padding: 0;
+    }
+    /*Popup  booth*/
+    .popup-panel .popup-form.booth {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1199.98px) and (orientation: portrait) {}
+
+@media (max-width: 1199.98px) and (orientation: landscape) {}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .popup-panel .popup-form {
+        width: 70%;
+    }
+    /*Popup  booth*/
+    .popup-panel .popup-form.booth {
+        width: 60%;
+    }
+}
+
+@media (max-width: 991.98px) and (orientation: portrait) {}
+
+@media (max-width: 991.98px) and (orientation: landscape) {
+    .popup-panel .popup-form {
+        width: 50%;
+    }
+    /*Popup  booth*/
+    .popup-panel .popup-form.booth {
+        width: 35%;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .popup-panel .popup-form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767.98px) and (orientation: portrait) {}
+
+@media (max-width: 767.98px) and (orientation: landscape) {}
+
+@media (max-width: 575.98px) {
+    .popup-panel .popup-form {
+        width: 85%;
+    }
+    .popup-panel .popup-form {
+        height: 100px;
+    }
+    .popup-panel img.close-btn {
+        width: 5%;
+    }
+    .popup-panel .popup-form .btn-wrapper {
+        top: 85%;
+    }
+    .popup-panel img.close-btn {
+        top: 20%;
+    }
+    /*Popup  booth*/
+    .popup-panel .popup-form.booth {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 575.98px) and (orientation: portrait) {}
+
+@media (max-width: 575.98px) and (orientation: landscape) {}
